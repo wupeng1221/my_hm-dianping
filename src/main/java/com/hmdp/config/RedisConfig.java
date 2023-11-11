@@ -13,9 +13,8 @@ public class RedisConfig {
         //配置类
         Config config = new Config();
         config.useSingleServer()
-                .setAddress("redis://192.168.1.100/6379")
-                .setPassword("wupeng1221")
-                .setDatabase(0);
+                .setAddress("redis://192.168.1.100:6379")
+                .setPassword("wupeng1221");
         return Redisson.create(config);
     }
 
