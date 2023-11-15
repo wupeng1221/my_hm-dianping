@@ -23,4 +23,8 @@ public interface IUserService extends IService<User> {
 
     Result logout();
 
+    Result sign();
+
+    Result signCount();
+
 }
